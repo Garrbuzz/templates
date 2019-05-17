@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.grid-12 {
+  display: grid;
+  grid-template-column: repeat(12, 1fr); }
+
+.g-4-10 {
+  grid-column: 4/10; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.hide {
+  display: none; }
+
+.header-t1 {
+  background: url("../img/back1.jpg");
+  background-size: cover;
+  height: 1022px; }
+
+.logo {
+  position: absolute;
+  top: 11%;
+  left: 15%; }
+
+.burg-menu {
+  position: absolute;
+  top: 11%;
+  right: 15%; }
+
+.nav {
+  font-family: railwayBold;
+  margin-top: 11%; }
+  .nav ul li {
+    display: inline-block; }
+
+@font-face {
+  font-family: railwayBold;
+  /* Имя шрифта */
+  src: url(.img/fonts/railway/Raleway-Bold.otf);
+  /* Путь к файлу со шрифтом */ }

@@ -1,0 +1,7 @@
+.grid-12{
+	display: grid;
+	grid-template-column: repeat(12, 1fr);
+}
+.g-4-10{
+	grid-column: 4/10;
+}
