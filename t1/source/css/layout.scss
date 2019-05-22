@@ -1,7 +1,14 @@
-.grid-12{
+.grid-col-12{
 	display: grid;
-	grid-template-column: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
+	
 }
-.g-4-10{
-	grid-column: 4/10;
+.grid-col-16{
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	
+}
+.grid-rows-3{
+	display: grid;
+	grid-template-rows:  1fr 1fr 1fr;
 }
