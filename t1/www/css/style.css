@@ -133,7 +133,7 @@
   .cont-wrap p {
     font-family: roboto;
     text-align: center;
-    margin: 2em 0 2.5em 0; }
+    margin: 3em 0 3.75em 0; }
 
 .rec-1-wrap {
   grid-column: 3/6;
@@ -148,7 +148,22 @@
 .rec-1 {
   width: 220px;
   background: #10c6fc;
-  height: 220px; }
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .rec-1 img {
+    margin-bottom: 1em; }
 
 .rec-2-wrap {
   grid-column: 6/9;
@@ -162,7 +177,22 @@
 .rec-2 {
   background: #835aeb;
   width: 220px;
-  height: 220px; }
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .rec-2 img {
+    margin-bottom: 1em; }
 
 .rec-3-wrap {
   grid-column: 9/12;
@@ -176,7 +206,22 @@
 .rec-3 {
   background: #002453;
   width: 220px;
-  height: 220px; }
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .rec-3 img {
+    margin-bottom: 1em; }
 
 .rec-4-wrap {
   grid-column: 12/15;
@@ -190,10 +235,82 @@
 .rec-4 {
   background: #002453;
   width: 220px;
-  height: 220px; }
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .rec-4 img {
+    margin-bottom: 1em; }
+
+.p-wp {
+  font-family: railway;
+  text-transform: uppercase;
+  margin-top: 1em;
+  color: white; }
+
+.work-experiens {
+  background: url("../img/back1.jpg");
+  background-size: cover;
+  height: auto; }
+
+.w-e, .edu {
+  background: url("../img/back-edu.png") no-repeat; }
+  .w-e h3, .edu h3 {
+    font-family: railwayBold;
+    font-size: 1.4em;
+    letter-spacing: 0.07em;
+    color: white;
+    margin: 10% 5%;
+    text-transform: uppercase; }
+  .w-e .edu-subtitle, .edu .edu-subtitle {
+    font-family: myriadpro;
+    color: white;
+    margin: 5%;
+    font-size: 1.2em; }
+  .w-e .time, .edu .time {
+    font-family: myriadpro;
+    color: white;
+    margin: 0.5em 5%;
+    font-size: 1em; }
+  .w-e p, .edu p {
+    font-family: myriadpro;
+    color: white;
+    margin: 0 5% 5% 5%;
+    font-size: 0.9em;
+    letter-spacing: 0.04em; }
+
+.w-e {
+  grid-column: 3/9;
+  margin: 5em 0.5em 5em 0; }
+
+.edu {
+  grid-column: 9/15;
+  margin: 5em 0 5em 0.5em; }
+
+.p1 {
+  padding-bottom: 2.5em;
+  border-bottom: 1px #bbb solid; }
 
 @font-face {
   font-family: railwayBold;
   /* Имя шрифта */
   src: url(../img/fonts/railway/Raleway-Bold.otf);
+  /* Путь к файлу со шрифтом */
+  font-family: railway;
+  /* Имя шрифта */
+  src: url(../img/fonts/railway/Raleway-Regular.otf);
+  /* Путь к файлу со шрифтом */
+  font-family: myriadpro;
+  /* Имя шрифта */
+  src: url(../img/fonts/myriadpro/myriad.otf);
   /* Путь к файлу со шрифтом */ }
