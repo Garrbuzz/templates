@@ -337,12 +337,45 @@
 	}
 
 }
-
+.contacts{
+	background: url('../img/back1.jpg');
+	background-size: cover;
+}
+.feedback{
+	grid-column: 3/9;
+	background: url('../img/back-contacts.png');
+	padding-left: 2.5em;
+	margin:7.5em 0;
+	h2{
+		text-transform:uppercase;
+		font-family:railway;
+		color:white; 
+		margin: 3em 0 2.5em 0;
+	}
+	input{
+		margin: .75em 0;
+		background:none;
+		border: 1px #fff solid;
+		width:90%;
+		padding:0.75em 0  0.75em 0.5em;
+		color:white;
+	}
+	button{
+		background:#ff2b49;
+		font-family: roboto;
+		font-size: 1.1em;
+		padding:0.75em 0;
+		width:40%;
+		color:white;
+		margin:3em 0;
+		border:none;
+		margin-left:52%;
+	}
+}
 @font-face {
-    font-family: railwayBold; /* Имя шрифта */
-    src: url(../img/fonts/railway/Raleway-Bold.otf); /* Путь к файлу со шрифтом */
-    font-family: railway; /* Имя шрифта */
-    src: url(../img/fonts/railway/Raleway-Regular.otf); /* Путь к файлу со шрифтом */
-    font-family: myriadpro; /* Имя шрифта */
-    src: url(../img/fonts/myriadpro/myriad.otf); /* Путь к файлу со шрифтом */
+    font-family: railwayBold; 
+    src: url(../img/fonts/railway/Raleway-Bold.otf); 
+    font-family: railway; 
+    src: url(../img/fonts/railway/raleway-regular.otf); 
+ 
    }
