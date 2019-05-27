@@ -126,7 +126,7 @@
 .cont-wrap {
   grid-column: 4/14; }
   .cont-wrap h2 {
-    margin: 3.5em 0 0 0;
+    margin: 2.5em 0 0 0;
     font-family: railwayBold;
     font-size: 2.5em;
     text-align: center; }
@@ -253,7 +253,7 @@
     margin-bottom: 1em; }
 
 .p-wp {
-  font-family: railway;
+  font-family: roboto;
   text-transform: uppercase;
   margin-top: 1em;
   color: white; }
@@ -273,17 +273,17 @@
     margin: 10% 5%;
     text-transform: uppercase; }
   .w-e .edu-subtitle, .edu .edu-subtitle {
-    font-family: myriadpro;
+    font-family: roboto;
     color: white;
     margin: 5%;
     font-size: 1.2em; }
   .w-e .time, .edu .time {
-    font-family: myriadpro;
+    font-family: roboto;
     color: white;
     margin: 0.5em 5%;
     font-size: 1em; }
   .w-e p, .edu p {
-    font-family: myriadpro;
+    font-family: roboto;
     color: white;
     margin: 0 5% 5% 5%;
     font-size: 0.9em;
@@ -300,6 +300,85 @@
 .p1 {
   padding-bottom: 2.5em;
   border-bottom: 1px #bbb solid; }
+
+.latest-works .lw-title {
+  grid-column: 3/14; }
+  .latest-works .lw-title h2 {
+    margin: 2.5em 0 0 0;
+    font-family: railwayBold;
+    font-size: 2.5em;
+    text-align: center; }
+  .latest-works .lw-title p {
+    text-align: center;
+    font-family: roboto;
+    margin: 2em 0 0; }
+
+.latest-works .rec-lw-1 {
+  grid-column: 3/6;
+  height: 12em;
+  background: #10c6fc;
+  margin: 2em 0.5em 0.5em; }
+
+.latest-works .rec-lw-2 {
+  grid-column: 6/9;
+  height: 12em;
+  background: #835aeb;
+  margin: 2em 0.5em 0.5em; }
+
+.latest-works .rec-lw-3 {
+  grid-column: 9/12;
+  height: 12em;
+  background: #002453;
+  margin: 2em 0.5em 0.5em; }
+
+.latest-works .rec-lw-4 {
+  grid-column: 12/15;
+  height: 12em;
+  background: #ff2b4a;
+  margin: 2em 0.5em .5em; }
+
+.latest-works .rec-lw-5-6 {
+  grid-column: 3/9;
+  height: 12em;
+  background: #835aeb;
+  margin: .5em 0.5em 5em; }
+
+.latest-works .rec-lw-7 {
+  grid-column: 9/12;
+  height: 12em;
+  background: #002453;
+  margin: .5em 0.5em 5em; }
+
+.latest-works .rec-lw-8 {
+  grid-column: 12/15;
+  height: 12em;
+  background: #ff2b4a;
+  margin: .5em 0.5em 5em; }
+
+.blue {
+  background: #64cbc0; }
+  .blue .blue-cont {
+    grid-column: 3/9;
+    margin: 2em 0; }
+    .blue .blue-cont p {
+      padding: 0 2em 0 0.5em;
+      font-family: roboto;
+      color: 1d4440;
+      line-height: 1.5em; }
+  .blue .blue-img {
+    margin: 8em 0 0 0.5em;
+    grid-column: 3/6; }
+  .blue .signature {
+    margin: 0.5em 0;
+    grid-column: 3/6; }
+  .blue .croft {
+    margin: 0.5em 0 0 0.5em;
+    grid-column: 3/6;
+    font-family: roboto; }
+    .blue .croft h3 {
+      margin: 1em 0 0 0; }
+    .blue .croft p {
+      margin: 0.5em 0 7.5em 0; }
 
 @font-face {
   font-family: railwayBold;
