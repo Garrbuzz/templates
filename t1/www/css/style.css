@@ -8,8 +8,13 @@
   grid-template-columns: repeat(16, 1fr); }
 
 .grid-rows-3 {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr; }
+  grid-template-rows: 1.6fr 1fr 1.6fr; }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .burg-menu {
+    display: block; } }
 
 * {
   margin: 0;
@@ -32,7 +37,8 @@
 .burg-menu {
   position: absolute;
   top: 11%;
-  right: 15%; }
+  right: 15%;
+  display: none; }
 
 .nav {
   grid-column: 3/11;
@@ -381,24 +387,34 @@
 
 .contacts {
   background: url("../img/back1.jpg");
-  background-size: cover; }
+  background-size: cover;
+  grid-gap: 1em; }
+
+.wrap {
+  grid-column: 3/15;
+  margin: 7.5em 0;
+  grid-gap: 1em;
+  display: grid;
+  grid-temlate-column: 538px 538px;
+  grid-temlate-rows: 1fr 1fr 1fr; }
 
 .feedback {
   grid-column: 3/9;
+  grid-row: 1/4;
   background: url("../img/back-contacts.png");
   padding-left: 2.5em;
   margin: 7.5em 0; }
   .feedback h2 {
-    text-transform: uppercase;
     font-family: railway;
     color: white;
-    margin: 3em 0 2.5em 0; }
+    margin: 3em 0 2.5em 0;
+    text-transform: uppercase; }
   .feedback input {
     margin: .75em 0;
     background: none;
     border: 1px #fff solid;
     width: 90%;
-    padding: 0.75em 0  0.75em 0.5em;
+    padding: 0.75em 0  0.75em 0;
     color: white; }
   .feedback button {
     background: #ff2b49;
@@ -410,6 +426,90 @@
     margin: 3em 0;
     border: none;
     margin-left: 52%; }
+
+.addr {
+  padding-left: 2.5em;
+  padding-top: 3em;
+  grid-column: 9/15;
+  grid-row: 1/2;
+  background: url("../img/back-addr.png");
+  margin: 7.5em 0 0 0; }
+  .addr h2 {
+    font-family: railway;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.075em; }
+  .addr p {
+    font-family: railway;
+    color: #eee;
+    margin-top: 1.5em;
+    padding-right: 1.5em;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    letter-spacing: 0.075em; }
+
+.phone {
+  padding-left: 2.5em;
+  padding-top: 3em;
+  grid-column: 9/15;
+  grid-row: 2/3;
+  background: url("../img/back-addr.png"); }
+  .phone h2 {
+    font-family: railway;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    margin-bottom: 1.5em; }
+  .phone p {
+    font-family: railway;
+    color: #eee;
+    padding-right: 1.5em;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    letter-spacing: 0.075em; }
+
+.web {
+  padding-left: 2.5em;
+  padding-top: 3em;
+  grid-column: 9/15;
+  grid-row: 3/4;
+  background: url("../img/back-addr.png");
+  margin: 0 0 7.5em 0; }
+  .web h2 {
+    font-family: railway;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    margin-bottom: 1.5em; }
+  .web p {
+    font-family: railway;
+    color: #eee;
+    padding-right: 1.5em;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    letter-spacing: 0.075em; }
+
+@media screen and (max-width: 1082px) {
+  .nav {
+    display: none; }
+  .burg-menu {
+    display: block; }
+  .name h1 {
+    font-size: 3em; }
+  .name p {
+    font-size: 1em; }
+  .man {
+    display: none; }
+  .home-content {
+    grid-column: 1/13;
+    padding-left: 2vw; }
+    .home-content button {
+      font-family: roboto;
+      font-size: 8vh;
+      padding: 0;
+      width: 50vw;
+      height: 15vh;
+      margin: 10vh 22vw; } }
 
 @font-face {
   font-family: railwayBold;

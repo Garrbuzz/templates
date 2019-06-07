@@ -1,5 +1,7 @@
 @import "layout.scss";
+
 @import "../img/fonts/roboto/roboto.css";
+@import "media.scss";
 *{
 	margin:0;
 	padding:0;
@@ -22,6 +24,7 @@
 	position: absolute;
 	top:11%;
 	right:15%;
+	display:none;
 }
 .nav{
 	grid-column: 3/11;
@@ -340,24 +343,36 @@
 .contacts{
 	background: url('../img/back1.jpg');
 	background-size: cover;
+	grid-gap:1em;
+}
+.wrap{
+	grid-column: 3/15;
+	margin:7.5em 0;
+	grid-gap:1em;
+	display: grid;
+    grid-temlate-column: 538px 538px;
+	grid-temlate-rows: 1fr 1fr 1fr;
 }
 .feedback{
 	grid-column: 3/9;
+	grid-row: 1/4;
 	background: url('../img/back-contacts.png');
 	padding-left: 2.5em;
 	margin:7.5em 0;
+
 	h2{
-		text-transform:uppercase;
 		font-family:railway;
 		color:white; 
 		margin: 3em 0 2.5em 0;
+		text-transform: uppercase;
+		
 	}
 	input{
 		margin: .75em 0;
 		background:none;
 		border: 1px #fff solid;
 		width:90%;
-		padding:0.75em 0  0.75em 0.5em;
+		padding:0.75em 0  0.75em 0;
 		color:white;
 	}
 	button{
@@ -372,10 +387,138 @@
 		margin-left:52%;
 	}
 }
+
+.addr{
+	padding-left: 2.5em;
+	padding-top:3em;
+	grid-column:9/15;
+	grid-row: 1/2;
+	background: url('../img/back-addr.png');
+	margin:7.5em 0 0 0;
+	h2{
+		font-family:railway;
+		color:white; 
+		text-transform: uppercase;
+		letter-spacing: 0.075em;
+	}
+	p{
+		font-family:railway;
+		color:#eee; 
+		margin-top:1.5em;
+		padding-right:1.5em;
+		font-size: 0.8em;
+		line-height: 1.5em;
+		letter-spacing: 0.075em;
+
+	}
+}
+.phone{
+	padding-left: 2.5em;
+	padding-top:3em;
+	grid-column:9/15;	
+	grid-row: 2/3;	
+	background: url('../img/back-addr.png');
+	h2{
+		font-family:railway;
+		color:white; 
+		text-transform: uppercase;
+		letter-spacing: 0.075em;
+		margin-bottom: 1.5em;
+	}
+	p{
+		font-family:railway;
+		color:#eee; 
+		padding-right:1.5em;
+		font-size: 0.8em;
+		line-height: 1.5em;
+		letter-spacing: 0.075em;
+
+	}
+}
+.web{
+	padding-left: 2.5em;
+	padding-top:3em;
+	grid-column:9/15;	
+	grid-row: 3/4;
+	background: url('../img/back-addr.png');
+	h2{
+		font-family:railway;
+		color:white; 
+		text-transform: uppercase;
+		letter-spacing: 0.075em;
+		margin-bottom: 1.5em;
+	}
+	p{
+		font-family:railway;
+		color:#eee; 
+		
+		padding-right:1.5em;
+		font-size: 0.8em;
+		line-height: 1.5em;
+		letter-spacing: 0.075em;
+
+	}
+	margin:0 0 7.5em 0;
+}
+
+@media screen and (max-width: 1082px) {
+  .nav {display: none;}
+  .burg-menu {display: block;}
+  .name h1{
+  	font-size: 3em;
+  }
+  .name p {
+  	font-size: 1em;
+  }
+  .man{
+  	display:none;
+
+  }
+  	.home-content{
+  		grid-column:1/13;
+  		padding-left: 2vw;
+  		button{
+  			font-family: roboto;
+			font-size: 8vh;
+			padding:0;
+			width:50vw;
+			height: 15vh;
+			margin: 10vh 22vw;
+  		}
+  
+  	}
+}
+
+// @media screen and (max-width: 770px) {
+//   .nav {display: none;}
+//   .burg-menu {display: block;}
+//   .name h1{
+//   	font-size: 3em;
+//   }
+//   .name p {
+//   	font-size: 1em;
+//   }
+//   .man{
+//   	display:none;
+
+//   }
+//   	.home-content{
+//   		grid-column:1/13;
+//   		padding-left: 2vw;
+//   		button{
+//   	// 		padding:0.75em 4em;
+// 			// color:white;
+// 			// margin:3em 0;
+// 			width:50vw;
+// 			height: 10vh;
+// 			margin: 10vh 25vw;
+//   		}
+  
+//   	}
+// }
 @font-face {
     font-family: railwayBold; 
     src: url(../img/fonts/railway/Raleway-Bold.otf); 
     font-family: railway; 
     src: url(../img/fonts/railway/raleway-regular.otf); 
- 
-   }
+}
