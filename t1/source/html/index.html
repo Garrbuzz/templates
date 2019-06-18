@@ -12,7 +12,7 @@
 			<img src="./img/logo.png" alt="">
 		</div>
 		<div class="burg-menu">
-			<img src="./img/menu-burger.png" alt="">
+			<img id = "burger-btn"  src="./img/menu-burger.png" alt="">
 		</div>
 		<nav class="nav">
 			<ul>
@@ -28,7 +28,19 @@
 			<p>#User&nbsp&nbspExperience&nbsp& nbsp#Music&nbsp  #Creative&nbsp&nbsp Direction</p>
 		</div>
 	</header>
-	<section class="grid-col-12 home">
+	<div id="burger-menu" class = "hide">
+		
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#working-process">My working process</a></li>
+				<li><a href="#work-experiens">Work experiense</a></li>
+				<li><a href="#latest-works">My Latest Works</a></li>
+				<li><a href="#contacts">Contacts</a></li>
+				<li id = "burger-back">BACK</li>
+			</ul>
+		
+	</div>
+	<section id = "home" class="grid-col-12 home">
 		<div class="man">
 			<img src="../img/man.png" alt="">
 		</div>
@@ -40,7 +52,7 @@
 			
 		</div>
 	</section>
-	<section class="grid-col-16 working-process">
+	<section  id = "working-process" class="grid-col-16 working-process">
 		<div class="cont-wrap">
 			<h2>My Working Process</h2>
 			<p>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</p>
@@ -71,7 +83,7 @@
 		</div>
 		
 	</section>
-	<section class="grid-col-16 work-experiens">
+	<section id = "work-experiens" class="grid-col-16 work-experiens">
 		<div class="w-e">
 			<h3>Work Experience</h3>
 			<p class="edu-subtitle">Mad Max Design</p>
@@ -92,7 +104,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 		</div>
 	</section>
-	<section class="grid-col-16 latest-works">
+	<section id = "latest-works"  class="grid-col-16 latest-works">
 		<div class="lw-title">
 			<h2>My latest Works</h2>
 			<p>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</p>
@@ -136,7 +148,7 @@
 		</div>
 		
 	</section>
-	<section class="grid-col-16 grid-rows-3 contacts">
+	<section id = "contacts"  class="grid-col-16 grid-rows-3 contacts">
 			<div class="feedback">
 				<h2>Leave a message</h2>
 
@@ -165,5 +177,7 @@
 		
 		
 	</section>
+
+<script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>
